@@ -234,3 +234,46 @@ img {
 .animate-fade-in {
   animation: fadeIn 0.6s ease forwards;
 }
+
+/* ── Mobile Layout Optimization ── */
+@media (max-width: 900px) {
+  /* Impila le colonne per la storia e chi siamo */
+  #storia .container > div,
+  #chi-siamo .container > div,
+  #contatti .container > div {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  
+  /* Sposta l'immagine sopra il testo su mobile per un flusso naturale */
+  #storia .container > div > div:first-child,
+  #chi-siamo .container > div > div:last-child {
+    order: -1;
+  }
+
+  /* Rimuove le card decorative sfalsate che farebbero uscire lo schermo dai bordi */
+  .layered-photo-back,
+  .about-photo-back {
+    display: none !important;
+  }
+
+  /* Ottimizza le scatole delle immagini principali */
+  .photo-main,
+  .about-main {
+    min-height: 260px !important;
+    aspect-ratio: 16/10 !important;
+    border-radius: 16px !important;
+  }
+
+  /* Ottimizza i padding delle sezioni */
+  .section {
+    padding: 64px 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-main,
+  .about-main {
+    min-height: 200px !important;
+  }
+}
