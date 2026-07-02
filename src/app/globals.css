@@ -235,6 +235,12 @@ img {
   animation: fadeIn 0.6s ease forwards;
 }
 
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
 /* ── Mobile Layout Optimization ── */
 @media (max-width: 900px) {
   /* Impila le colonne per la storia e chi siamo */
@@ -263,6 +269,16 @@ img {
     min-height: 260px !important;
     aspect-ratio: 16/10 !important;
     border-radius: 16px !important;
+    transform: none !important;
+    box-shadow: 0 10px 30px rgba(15,35,71,0.1) !important;
+  }
+
+  /* Azzera i margini e i padding che decentrano le immagini */
+  .layered-photo-group,
+  .about-photo-group {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
   }
 
   /* Ottimizza i padding delle sezioni */
@@ -274,6 +290,30 @@ img {
 @media (max-width: 600px) {
   .photo-main,
   .about-main {
-    min-height: 200px !important;
+    min-height: 220px !important;
+  }
+  
+  /* Riduce i font dei titoli per evitare che escano a destra su iPhone */
+  h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    line-height: 1.15 !important;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.2rem) !important;
+    line-height: 1.2 !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Riposiziona o ridimensiona le etichette sospese per non farle sporgere a destra */
+  .layered-photo-group > div[style*="position: absolute"],
+  .about-photo-group > div[style*="position: absolute"] {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 16px !important;
+    display: inline-flex !important;
+    width: auto !important;
   }
 }
