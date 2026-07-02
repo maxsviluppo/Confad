@@ -190,11 +190,6 @@ export default function HeroSlider() {
           ))}
         </div>
       </div>
-
-      {/* Bottom fade */}
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 130, background: "linear-gradient(transparent, #f8f9fb)", pointerEvents: "none" }} />
-
-      <style>{`@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.5); } }`}</style>
     </section>
   );
 }

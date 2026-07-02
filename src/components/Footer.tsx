@@ -9,7 +9,7 @@ const footerLinks = {
 };
 
 export default function Footer() {
-  const [customLogo, setCustomLogo] = useState("/Logo-ULTIMO_completo_trasparente-1-e1690538152112-222x300.png");
+  const [customLogo, setCustomLogo] = useState("/logo.png");
 
   useEffect(() => {
     const savedMedia = localStorage.getItem("confad_media_associations");

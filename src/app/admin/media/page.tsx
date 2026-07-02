@@ -11,7 +11,7 @@ interface MediaAssociation {
 }
 
 const initialAssociations: MediaAssociation[] = [
-  { sectionId: "general", sectionLabel: "⚙️ Logo & Icone Globali", fieldLabel: "Logo Principale (Navbar & Footer)", currentImageName: "Logo-ULTIMO_completo_trasparente-1-e1690538152112-222x300.png", dimensions: "222 × 300 px", previewUrl: "/Logo-ULTIMO_completo_trasparente-1-e1690538152112-222x300.png" },
+  { sectionId: "general", sectionLabel: "⚙️ Logo & Icone Globali", fieldLabel: "Logo Principale (Navbar & Footer)", currentImageName: "logo.png", dimensions: "222 × 300 px", previewUrl: "/logo.png" },
   { sectionId: "general", sectionLabel: "⚙️ Logo & Icone Globali", fieldLabel: "Favicon Sito (.ico / .png)", currentImageName: "favicon.ico", dimensions: "32 × 32 px", previewUrl: "" },
   { sectionId: "hero", sectionLabel: "🎯 Hero Section (Slider)", fieldLabel: "Immagine Slide 1 (Voci e Caregiver)", currentImageName: "hero-slide-caregiver-1.jpg", dimensions: "1920 × 1080 px", previewUrl: "" },
   { sectionId: "hero", sectionLabel: "🎯 Hero Section (Slider)", fieldLabel: "Immagine Slide 2 (Mutuo Aiuto)", currentImageName: "hero-slide-mutuo-aiuto.jpg", dimensions: "1920 × 1080 px", previewUrl: "" },

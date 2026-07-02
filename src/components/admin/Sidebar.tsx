@@ -90,7 +90,7 @@ export default function AdminSidebar() {
       {/* Logo */}
       <div className="sidebar-logo" style={{ alignItems: "center" }}>
         <img
-          src="/Logo-ULTIMO_completo_trasparente-1-e1690538152112-222x300.png"
+          src="/logo.png"
           alt="Logo CONFAD"
           style={{ width: 34, height: 46, objectFit: "contain", flexShrink: 0 }}
         />

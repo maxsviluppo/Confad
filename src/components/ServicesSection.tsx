@@ -2,8 +2,9 @@
 
 const services = [
   {
+    n: "I",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
         <circle cx="9" cy="7" r="4"/>
         <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
@@ -11,128 +12,227 @@ const services = [
       </svg>
     ),
     title: "Advocacy e Pressione Politica",
-    desc: "Monitoriamo i Disegni di Legge per i Caregiver, conduciamo campagne di sensibilizzazione e dialoghiamo con ministeri e parlamentari per ottenere diritti concreti.",
+    desc: "Monitoriamo i Disegni di Legge nazionali, promuoviamo audizioni al Senato e conduciamo campagne per ottenere tutele previdenziali e sanitarie reali per i caregiver.",
     color: "#1a3a6e",
     tag: "Focus Leggi & Diritti",
   },
   {
+    n: "II",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
       </svg>
     ),
-    title: "Mutuo Aiuto e Comunità",
-    desc: "Gruppi di mutuo aiuto mensili guidati da psicologi professionisti per combattere il burnout del caregiver e rompere l'isolamento sociale delle famiglie.",
+    title: "Supporto Psicologico & Burnout",
+    desc: "Colloqui individuali e percorsi di sostegno mirati ad alleviare lo stress emotivo derivante dal lavoro di assistenza continuativo.",
     color: "#2d5aa8",
     tag: "Benessere & Supporto",
   },
   {
+    n: "III",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
         <polyline points="14 2 14 8 20 8"/>
         <line x1="16" y1="13" x2="8" y2="13"/>
         <line x1="16" y1="17" x2="8" y2="17"/>
-        <polyline points="10 9 9 9 8 9"/>
       </svg>
     ),
-    title: "Informazione e Divulgazione",
-    desc: "Guide pratiche su agevolazioni fiscali, Legge 104, ISEE disabilità, permessi lavorativi e tutti i diritti spettanti alle famiglie con persone non autosufficienti.",
-    color: "#e8b84b",
+    title: "Informazione Diritti e Burocrazia",
+    desc: "Forniamo guide chiare su permessi lavorativi (Legge 104), congedi straordinari, calcolo ISEE disabilità ed esenzioni mediche.",
+    color: "#92650a",
     tag: "Focus Leggi & Diritti",
   },
   {
+    n: "IV",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M9 11l3 3L22 4"/>
-        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-      </svg>
-    ),
-    title: "Azioni Legali Collettive",
-    desc: "Ricorsi collettivi per tutelare i diritti economici delle famiglie. Come la storica battaglia «STOP AL NUOVO ISEE» per escludere l'indennità di accompagnamento dal reddito.",
-    color: "#0f2347",
-    tag: "Storie & Condivisione",
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
       </svg>
     ),
-    title: "Supporto Psicologico",
-    desc: "Area dedicata alla salute mentale del caregiver: colloqui individuali, gruppi di ascolto e percorsi di gestione dello stress emotivo con professionisti qualificati.",
+    title: "Gruppi di Mutuo Aiuto",
+    desc: "Gruppi mensili di ascolto e condivisione guidati da psicologi per far incontrare le famiglie, condividere storie e rompere l'isolamento.",
     color: "#c0392b",
     tag: "Benessere & Supporto",
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
-      </svg>
-    ),
-    title: "Campagne Virali e Social",
-    desc: "Lanciamo campagne di sensibilizzazione nazionali — come #unaleggesubito — per portare la voce del caregiver familiare all'attenzione dell'opinione pubblica e delle istituzioni.",
-    color: "#1a3a6e",
-    tag: "Call to Action",
   },
 ];
 
 const tagColors: Record<string, string> = {
   "Focus Leggi & Diritti": "#1a3a6e",
   "Benessere & Supporto": "#2d5aa8",
-  "Storie & Condivisione": "#c0392b",
-  "Call to Action": "#e8b84b",
 };
 
 export default function ServicesSection() {
   return (
-    <section id="servizi" className="section" style={{ background: "var(--off-white)" }}>
+    <section id="servizi" className="section" style={{ background: "var(--off-white)", paddingTop: 110, paddingBottom: 110, overflow: "hidden" }}>
+      <style>{`
+        .timeline-line {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          background: linear-gradient(to bottom, rgba(232,184,75,0) 0%, #e8b84b 15%, #e8b84b 85%, rgba(232,184,75,0) 100%);
+          transform: translateX(-50%);
+        }
+        .timeline-item {
+          position: relative;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          margin-bottom: 60px;
+          align-items: center;
+        }
+        .timeline-item:last-child {
+          margin-bottom: 0;
+        }
+        .timeline-dot {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          background: #fff;
+          border: 3px solid #e8b84b;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 15px;
+          color: #0f2347;
+          box-shadow: 0 10px 25px rgba(232,184,75,0.25);
+          z-index: 10;
+          transition: all 0.3s ease;
+        }
+        .timeline-card {
+          background: #fff;
+          border-radius: 20px;
+          padding: 38px 34px;
+          box-shadow: 0 10px 35px rgba(15,35,71,0.03);
+          border: 1px solid rgba(15,35,71,0.05);
+          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          position: relative;
+          z-index: 2;
+        }
+        .timeline-item:hover .timeline-dot {
+          background: var(--accent);
+          color: var(--primary-dark);
+          transform: translate(-50%, -50%) scale(1.1);
+          box-shadow: 0 10px 30px rgba(232,184,75,0.45);
+        }
+        .timeline-item:hover .timeline-card {
+          transform: translateY(-5px);
+          box-shadow: 0 25px 60px rgba(15,35,71,0.09);
+          border-color: rgba(232,184,75,0.3);
+        }
+        
+        @media (max-width: 900px) {
+          .timeline-line {
+            left: 20px;
+          }
+          .timeline-dot {
+            left: 20px;
+          }
+          .timeline-item {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding-left: 60px;
+            margin-bottom: 40px;
+          }
+          .timeline-card-container {
+            grid-column: 1 / -1 !important;
+            text-align: left !important;
+          }
+        }
+      `}</style>
+
       <div className="container">
         {/* Header */}
-        <div style={{ textAlign: "center", marginBottom: 64 }}>
+        <div style={{ textAlign: "center", marginBottom: 80 }}>
           <span className="section-label" style={{ justifyContent: "center" }}>Cosa Facciamo</span>
-          <h2 className="section-title" style={{ textAlign: "center" }}>
+          <h2 className="section-title" style={{ textAlign: "center", fontSize: "clamp(2.2rem, 4.5vw, 3rem)" }}>
             Quattro pilastri per i tuoi diritti
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto" }}>
+          <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: 640 }}>
             CONFAD APS agisce su più fronti per garantire riconoscimento, tutela e supporto concreto alle famiglie con persone con disabilità grave.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid-3">
-          {services.map((s, i) => (
-            <div
-              key={i}
-              className="card"
-              style={{ padding: "36px 30px", cursor: "default", position: "relative", overflow: "hidden" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow = "0 24px 64px rgba(26,58,110,0.15)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "";
-              }}
-            >
-              {/* Top bar */}
-              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${s.color}, ${s.color}66)` }} />
+        {/* Timeline Layout */}
+        <div style={{ position: "relative" }}>
+          {/* Vertical central line */}
+          <div className="timeline-line" />
 
-              {/* Tag */}
-              <div style={{ display: "inline-block", background: `${tagColors[s.tag]}15`, color: tagColors[s.tag] === "#e8b84b" ? "#92650a" : tagColors[s.tag], fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 8px", borderRadius: 100, marginBottom: 18 }}>
-                {s.tag}
+          {/* Item 1 */}
+          <div className="timeline-item">
+            <div className="timeline-card-container" style={{ textAlign: "right" }}>
+              <div className="timeline-card" style={{ display: "inline-block", maxWidth: 480, textAlign: "left" }}>
+                <div style={{ display: "inline-block", background: "rgba(26,58,110,0.08)", color: "#1a3a6e", fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 100, marginBottom: 16 }}>
+                  Focus Leggi & Diritti
+                </div>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: "var(--primary-dark)", marginBottom: 12 }}>Advocacy e Pressione Politica</h3>
+                <p style={{ fontSize: 13.5, color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                  Monitoriamo i Disegni di Legge nazionali, promuoviamo audizioni al Senato e conduciamo campagne per ottenere tutele previdenziali e sanitarie reali per i caregiver.
+                </p>
               </div>
-
-              {/* Icon */}
-              <div style={{ width: 58, height: 58, borderRadius: 14, background: `${s.color}12`, display: "flex", alignItems: "center", justifyContent: "center", color: s.color, marginBottom: 20 }}>
-                {s.icon}
-              </div>
-
-              <h3 style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--primary-dark)", marginBottom: 12 }}>{s.title}</h3>
-              <p style={{ fontSize: 14, color: "var(--text-light)", lineHeight: 1.75 }}>{s.desc}</p>
             </div>
-          ))}
+            <div className="timeline-dot">I</div>
+            <div /> {/* Empty spacer */}
+          </div>
+
+          {/* Item 2 */}
+          <div className="timeline-item">
+            <div /> {/* Empty spacer */}
+            <div className="timeline-dot">II</div>
+            <div className="timeline-card-container">
+              <div className="timeline-card" style={{ display: "inline-block", maxWidth: 480 }}>
+                <div style={{ display: "inline-block", background: "rgba(45,90,168,0.08)", color: "#2d5aa8", fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 100, marginBottom: 16 }}>
+                  Benessere & Supporto
+                </div>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: "var(--primary-dark)", marginBottom: 12 }}>Supporto Psicologico & Burnout</h3>
+                <p style={{ fontSize: 13.5, color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                  Colloqui individuali e percorsi di sostegno mirati ad alleviare lo stress emotivo derivante dal lavoro di assistenza continuativo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 3 */}
+          <div className="timeline-item">
+            <div className="timeline-card-container" style={{ textAlign: "right" }}>
+              <div className="timeline-card" style={{ display: "inline-block", maxWidth: 480, textAlign: "left" }}>
+                <div style={{ display: "inline-block", background: "rgba(232,184,75,0.15)", color: "#92650a", fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 100, marginBottom: 16 }}>
+                  Focus Leggi & Diritti
+                </div>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: "var(--primary-dark)", marginBottom: 12 }}>Informazione Diritti e Burocrazia</h3>
+                <p style={{ fontSize: 13.5, color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                  Forniamo guide chiare su permessi lavorativi (Legge 104), congedi straordinari, calcolo ISEE disabilità ed esenzioni mediche.
+                </p>
+              </div>
+            </div>
+            <div className="timeline-dot">III</div>
+            <div /> {/* Empty spacer */}
+          </div>
+
+          {/* Item 4 */}
+          <div className="timeline-item">
+            <div /> {/* Empty spacer */}
+            <div className="timeline-dot">IV</div>
+            <div className="timeline-card-container">
+              <div className="timeline-card" style={{ display: "inline-block", maxWidth: 480 }}>
+                <div style={{ display: "inline-block", background: "rgba(192,57,43,0.08)", color: "#c0392b", fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 100, marginBottom: 16 }}>
+                  Benessere & Supporto
+                </div>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: "var(--primary-dark)", marginBottom: 12 }}>Gruppi di Mutuo Aiuto</h3>
+                <p style={{ fontSize: 13.5, color: "var(--text-light)", lineHeight: 1.7, margin: 0 }}>
+                  Gruppi mensili di ascolto e condivisione guidati da psicologi per far incontrare le famiglie, condividere storie e rompere l&apos;isolamento.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

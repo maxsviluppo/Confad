@@ -13,7 +13,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [customLogo, setCustomLogo] = useState("/Logo-ULTIMO_completo_trasparente-1-e1690538152112-222x300.png");
+  const [customLogo, setCustomLogo] = useState("/logo.png");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
