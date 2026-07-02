@@ -141,7 +141,7 @@ export default function SeoPage() {
       <div className="admin-content">
         {/* Score Banner */}
         <div style={{ display: "flex", alignItems: "center", gap: 24, padding: "20px 24px", background: "var(--surface)", borderRadius: "var(--r-lg)", border: "1px solid var(--border)", marginBottom: 24 }}>
-          <div style={{ width: 72, height: 72, borderRadius: "50%", border: `4px solid ${scoreColor}`, display: "flex", flexDirection: "column", alignItems: "center", justify: "center", flexShrink: 0 }}>
+          <div style={{ width: 72, height: 72, borderRadius: "50%", border: `4px solid ${scoreColor}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
             <span style={{ fontSize: 22, fontWeight: 900, color: scoreColor }}>{Math.round((score / checklistItems.length) * 100)}</span>
           </div>
           <div>

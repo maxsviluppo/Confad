@@ -185,7 +185,7 @@ export default function AziendaPage() {
                     <input
                       className="form-input"
                       type="url"
-                      value={(data as Record<string, string>)[s.key]}
+                      value={(data as any)[s.key]}
                       onChange={(e) => set(s.key, e.target.value)}
                       placeholder={s.placeholder}
                     />
